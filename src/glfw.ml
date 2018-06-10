@@ -299,6 +299,9 @@ let get_cursor_pos w =
 let window_should_close =
   foreign "glfwWindowShouldClose" (window @-> returning int)
 
+let set_window_should_close =
+  foreign "glfwSetWindowShouldClose" (window @-> int @-> returning void)
+
 let get_framebuffer_size =
   foreign "glfwGetFramebufferSize" (window @-> ptr int @-> ptr int
                                            @-> returning void)
