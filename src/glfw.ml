@@ -257,7 +257,7 @@ let monitor : monitor typ = ptr void
 
 let null = Ctypes.null
 
-let cursor_pos_callback = window @-> int @-> int @-> returning void
+let cursor_pos_callback = window @-> float @-> float @-> returning void
 
 let error_callback = int @-> string @-> returning void
 
@@ -362,6 +362,3 @@ let set_time =
 
 let get_time =
   foreign "glfwGetTime" (void @-> returning double)
-
-
-
