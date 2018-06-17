@@ -1,6 +1,6 @@
 opam-version: "1.2"
 name: "ocaml-glfw"
-version: "0.2"
+version: "0.2.1"
 maintainer: "Rizo Isrof <rizo@odis.io>"
 authors: "Rizo Isrof <rizo@odis.io>"
 homepage: "https://github.com/rizo/ocaml-glfw"
